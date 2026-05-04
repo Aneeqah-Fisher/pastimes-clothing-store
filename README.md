@@ -60,7 +60,7 @@ Password: password
 
 ## 🎥 Video Demonstration
 
-[PASTE YOUR YOUTUBE LINK HERE]
+(https://youtu.be/GL-MW6gMtvY)
 
 ---
 

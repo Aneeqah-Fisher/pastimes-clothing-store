@@ -1,0 +1,5 @@
+Admin User,admin@pastimes.co.za,21232f297a57a5a743894a0e4a801fc3
+Manager One,manager1@pastimes.co.za,21232f297a57a5a743894a0e4a801fc3
+Manager Two,manager2@pastimes.co.za,21232f297a57a5a743894a0e4a801fc3
+Supervisor,supervisor@pastimes.co.za,21232f297a57a5a743894a0e4a801fc3
+Admin Test,admintest@pastimes.co.za,21232f297a57a5a743894a0e4a801fc3

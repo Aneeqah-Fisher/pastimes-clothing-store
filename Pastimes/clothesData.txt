@@ -1,0 +1,5 @@
+Denim Jacket,Blue denim jacket,Levis,M,Good,250.00,3,denim.jpg
+Summer Dress,Floral dress,Zara,S,Excellent,180.00,2,dress.jpg
+White Sneakers,Comfort sneakers,Nike,7,Good,300.00,4,shoes.jpg
+Black Jeans,Slim fit jeans,H&M,32,Good,200.00,5,jeans.jpg
+Formal Shirt,Work shirt,Cotton On,L,Excellent,150.00,3,shirt.jpg

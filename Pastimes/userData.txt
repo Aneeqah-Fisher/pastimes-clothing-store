@@ -1,0 +1,5 @@
+John Doe,john@example.com,johndoe,5f4dcc3b5aa765d61d8327deb882cf99,verified
+Mary Smith,mary@example.com,marysmith,5f4dcc3b5aa765d61d8327deb882cf99,pending
+Aisha Khan,aisha@example.com,aishak,5f4dcc3b5aa765d61d8327deb882cf99,verified
+Thabo Mokoena,thabo@example.com,thabom,5f4dcc3b5aa765d61d8327deb882cf99,pending
+Lisa Adams,lisa@example.com,lisaa,5f4dcc3b5aa765d61d8327deb882cf99,verified

@@ -1,0 +1,697 @@
+/* =========================================
+   FILE: style.css
+   PURPOSE: Styling for Pastimes website
+   ========================================= */
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #333;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Hover effect for navigation */
+.navbar a:hover {
+    color: #d6a75c;
+}
+
+/* Hero banner section */
+.hero {
+    min-height: 420px;
+    background: linear-gradient(rgba(59, 47, 47, 0.75), rgba(59, 47, 47, 0.75)),
+                url("../images/hero-clothes.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+/* Text inside hero section */
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+/* Hero paragraph */
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button container */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* General button style */
+.btn {
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Main button */
+.primary-btn {
+    background-color: #d6a75c;
+    color: #3b2f2f;
+}
+
+/* Secondary button */
+.secondary-btn {
+    background-color: white;
+    color: #3b2f2f;
+}
+
+/* Goals section */
+.goals,
+.categories {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Section headings */
+.goals h2,
+.categories h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #3b2f2f;
+}
+
+/* Card layout */
+.goal-container,
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Goal cards */
+.goal-card {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Goal card heading */
+.goal-card h3 {
+    margin-bottom: 12px;
+    color: #8b5e34;
+}
+
+/* Category cards */
+.category-card {
+    background-color: #3b2f2f;
+    color: white;
+    width: 180px;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #3b2f2f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar nav {
+        margin-top: 15px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+  /* Hero banner section */
+.hero {
+    min-height: 420px;
+    background-image: linear-gradient(rgba(59, 47, 47, 0.55), rgba(59, 47, 47, 0.55)),
+                      url("../images/hero-clothes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+    /* =========================================
+   LOGIN PAGE STYLING
+   ========================================= */
+
+body {
+    background-color: #f4f1ec;
+    font-family: Arial, sans-serif;
+}
+
+/* Center login box */
+.login-container {
+    width: 350px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3b2f2f;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d6a75c;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover */
+.login-container button:hover {
+    background-color: #b68c45;
+}
+
+/* Register link */
+.link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #3b2f2f;
+    text-decoration: none;
+}
+
+/* Error message */
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* =========================================
+   PRODUCT PAGE STYLING
+   ========================================= */
+
+.shop-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.shop-section h2 {
+    font-size: 36px;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.shop-intro {
+    margin-bottom: 35px;
+    color: #555;
+    font-size: 17px;
+}
+
+.product-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.product-info h3 {
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #8b5e34;
+    font-weight: bold;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d6a75c;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #b98c3f;
+}
+
+.cart-link {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 25px;
+    background-color: #3b2f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+/* =========================================
+   CART PAGE STYLING
+   ========================================= */
+
+.cart-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.cart-section h2 {
+    font-size: 36px;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.cart-intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cart-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.cart-table th {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 14px;
+}
+
+.cart-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.total-row {
+    font-weight: bold;
+    color: #3b2f2f;
+}
+
+.remove-link {
+    color: #b23b3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cart-btn {
+    padding: 12px 20px;
+    background-color: #3b2f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.secondary-cart-btn {
+    background-color: #777;
+}
+
+.checkout-btn {
+    background-color: #d6a75c;
+    color: #3b2f2f;
+}
+.cart-empty {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cart-empty p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.cart-empty .cart-btn {
+    display: inline-block;
+}
+
+/* =========================================
+   ADMIN DASHBOARD STYLING
+   ========================================= */
+
+.admin-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.admin-section h2 {
+    font-size: 36px;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.admin-intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.admin-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.admin-card h3 {
+    color: #3b2f2f;
+    margin-bottom: 20px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 14px;
+}
+
+.admin-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-verified {
+    background-color: #d8f3dc;
+    color: #1b7f3a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #9a6a00;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.action-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.verify-link {
+    color: #1b7f3a;
+}
+
+.edit-link {
+    color: #8b5e34;
+}
+
+.delete-link {
+    color: #b23b3b;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, 
+.admin-table td {
+    padding: 14px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #3b2f2f;
+    color: white;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+.admin-table td {
+    word-break: break-word;
+}
+.action-links a {
+    margin-right: 8px;
+}
+/* =========================================
+   CHECKOUT PAGE STYLING
+   ========================================= */
+
+.checkout-section {
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-card {
+    width: 520px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.checkout-card h2 {
+    color: #3b2f2f;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #1b7f3a;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.checkout-details {
+    text-align: left;
+    background-color: #f8f5f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.checkout-details p {
+    margin-bottom: 10px;
+}
+
+.checkout-btn-link {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #d6a75c;
+    color: #3b2f2f;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+/* =========================================
+   MANAGE PRODUCTS PAGE
+   ========================================= */
+
+.admin-actions-top {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.admin-product-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.admin-table td {
+    vertical-align: middle;
+}
+/* =========================================
+   ADMIN FORM PAGE STYLING
+   ========================================= */
+
+.form-container {
+    width: 460px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #3b2f2f;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-container textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #d6a75c;
+    color: #3b2f2f;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #b98c3f;
+}

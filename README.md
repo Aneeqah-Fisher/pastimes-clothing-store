@@ -1,86 +1,193 @@
-# Pastimes Clothing Store
+# 👕 Pastimes Clothing Store
 
-## 📌 Project Description
+## Project Overview
 
-Pastimes is a web-based clothing store that allows users to browse and purchase pre-owned clothing items. The system includes user registration, login authentication, shopping cart functionality, checkout processing, and an admin dashboard for managing users and products.
-
----
-
-## 🚀 Features
-
-* User registration and login system
-* Admin verification of users
-* Product browsing with images and details
-* Add to cart functionality
-* Shopping cart with quantity updates
-* Checkout system with order generation
-* Admin dashboard for managing users
-* Admin product management (Add, Edit, Delete)
+**Pastimes** is a web-based eShop developed to promote sustainable fashion by allowing customers to buy and sell quality pre-owned clothing items. The system provides customer registration, administrator verification, shopping cart functionality, checkout processing, seller request management, and purchase history reporting.
 
 ---
 
-## 🛠️ Technologies Used
+## Features
 
-* PHP (Core PHP)
-* MySQL (phpMyAdmin)
-* HTML5 & CSS3
-* XAMPP (Apache Server)
+### Customer Features
 
----
+* User registration and login
+* Administrator verification before account access
+* Browse available clothing items
+* View product images and details
+* Add items to the shopping cart
+* Remove items from the cart
+* Continue shopping
+* Checkout and generate order references
+* View purchase history with purchase totals
+* Submit seller requests to sell clothing
 
-## ⚙️ Setup Instructions
+### Administrator Features
 
-1. Install XAMPP
-2. Start Apache and MySQL
-3. Open phpMyAdmin
-4. Create a database named **ClothingStore**
-5. Import the provided `ClothingStore.sql` file
-6. Copy the project folder into:
-   C:\xampp\htdocs\
-7. Run the setup script:
-   http://localhost/Pastimes/loadClothingStore.php
-8. Open the website:
-   http://localhost/Pastimes/index.php
-
----
-
-## 🔑 Test Logins
-
-### Admin Login
-
-Email: [admin@pastimes.co.za](mailto:admin@pastimes.co.za)
-Password: admin1234
-
-### User Login
-
-Username: johndoe
-Password: password
+* Secure administrator login
+* Verify newly registered users
+* Add, edit, and delete users
+* Add, edit, and delete products
+* Manage seller requests
+* Approve or reject seller applications
 
 ---
 
-## 🎥 Video Demonstration
+## Technologies Used
 
-(https://youtu.be/GL-MW6gMtvY)
+### Backend
+
+* PHP
+
+### Database
+
+* MySQL
+* phpMyAdmin
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Development Environment
+
+* XAMPP
 
 ---
 
-## 📂 Project Structure
+## Database Tables
 
-* index.php (Homepage)
-* login.php / register.php (Authentication)
-* products.php (Product listing)
-* cart.php (Shopping cart)
-* checkout.php (Order processing)
-* adminDashboard.php (Admin panel)
-* manageProducts.php (Product management)
-* DBConn.php (Database connection)
-* css/style.css (Styling)
-* images/ (Product images)
+| Table Name          | Description                     |
+| ------------------- | ------------------------------- |
+| **tblUser**         | Stores customer information     |
+| **tblAdmin**        | Stores administrator accounts   |
+| **tblClothes**      | Stores clothing products        |
+| **tblAorder**       | Stores order information        |
+| **orderLine**       | Stores items within orders      |
+| **seller_requests** | Stores customer seller requests |
 
 ---
 
-## 📌 Notes
+## Installation Instructions
 
-* Users must be verified by admin before logging in
-* Images must be stored in the images folder
-* Database connection uses MySQLi with prepared statements
+### 1. Install XAMPP
+
+Download and install XAMPP.
+
+### 2. Start Services
+
+Start the following services:
+
+* Apache
+* MySQL
+
+### 3. Copy Project Files
+
+Place the **Pastimes** folder inside:
+
+```text
+C:\xampp\htdocs\
+```
+
+### 4. Create Database
+
+Open **phpMyAdmin** and create a database named:
+
+```sql
+ClothingStore
+```
+
+### 5. Import Database
+
+Import the provided SQL file:
+
+```text
+myClothingStore.sql
+```
+
+### 6. Run the Application
+
+Open your browser and navigate to:
+
+```text
+http://localhost/Pastimes
+```
+
+---
+
+## Sample Login Credentials
+
+### Administrator
+
+| Email                                               | Password  |
+| --------------------------------------------------- | --------- |
+| [admin@pastimes.co.za](mailto:admin@pastimes.co.za) | admin1234 |
+
+### Customer
+
+Use any verified customer account available in the **tblUser** table.
+
+---
+
+## Additional Features
+
+* Purchase History Report
+* Seller Request Management
+* User Verification Workflow
+* Responsive User Interface
+
+---
+
+## Project Structure
+
+```text
+Pastimes/
+│
+├── index.php
+├── login.php
+├── register.php
+├── products.php
+├── cart.php
+├── checkout.php
+├── purchaseHistory.php
+├── sellerRequest.php
+├── logout.php
+│
+├── admin/
+│   ├── adminLogin.php
+│   ├── adminDashboard.php
+│   ├── manageUsers.php
+│   ├── manageProducts.php
+│   ├── manageSellerRequests.php
+│   └── logout.php
+│
+├── css/
+├── js/
+├── images/
+├── DBConn.php
+├── myClothingStore.sql
+└── README.md
+```
+
+---
+
+## Future Enhancements
+
+* Email-based password reset
+* Product search and filtering
+* Direct messaging between administrators and sellers
+* Image upload functionality
+* Online payment gateway integration
+* Improved mobile responsiveness
+
+---
+
+## Author
+
+**Prepared as part of the Final Portfolio of Evidence (POE).**
+
+---
+
+## License
+
+This project is intended for **educational purposes only**.
